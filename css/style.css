@@ -535,6 +535,7 @@ li{
 .swiper {
   width: 100%;
   height: 100%;
+  margin-top: 2rem;
 }
 
 .swiper-slide {
@@ -547,6 +548,7 @@ li{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -562,4 +564,59 @@ li{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-client-msg{
+  padding: 5rem 8rem;
+  background: var(--white);
+  border-radius: 1rem;
+  text-align: left;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.swiper-client-msg::before{
+  content: "";
+  position: absolute;
+  bottom: -10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5rem solid var(--white);
+  border-color: transparent;
+  border-top-color: var(--helper-tint);
+}
+
+.swiper-client-msg p::before{
+  content: "\f10d"; /* Using backward-slash & unicode to display font-awesome icon */
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  font-size: 5rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #ced3ff;
+}
+
+.swiper-client-msg p::after{
+  content: "\f10e"; /* Using backward-slash & unicode to display font-awesome icon */
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
+  font-size: 5rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #ced3ff;
+}
+
+.swiper-client-data{
+  align-items: center;
+  margin-top: 3.2rem;
+  gap: 3.2rem;
+}
+
+.swiper-slide img{
+  max-width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 0.5rem solid var(--helper-tint);
 }
