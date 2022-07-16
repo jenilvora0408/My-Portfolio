@@ -697,3 +697,69 @@ li{
   max-width: 30%;
   bottom: none;
 }
+
+/* ------------------------------------
+      Footer Section 
+------------------------------------  */
+
+.section-footer{
+  background: var(--heading);
+  transition: all 0.7s linear;
+}
+
+.section-footer h3{
+  color: var(--white);
+  margin-bottom: 4rem;
+}
+
+.f-about p{
+  color: #adadad;
+}
+
+.f-links ul, .f-services ul, .f-address address{
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  justify-content: center;
+}
+
+.f-links li, .f-links a, .f-services li, .f-services a{
+  font-size: 1.8rem;
+  color: #adadad;
+  text-transform: capitalize;
+}
+
+.f-links span, .f-services span, .f-address span{
+  margin-right: 1rem;
+}
+
+.f-address p, .f-address p a{
+  font-style: normal;
+  color: #adadad;
+}
+
+.f-social-icons{
+  margin: 5rem 0;
+  text-align: center;
+  color: #adadad;
+}
+
+.f-social-icons .icons{
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--icon-bg);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  color: var(--white);
+  animation: water-wave 3s linear infinite;
+}
+
+.f-credits{
+  text-align: center;
+  color: #adadad;
+}
+
+.footer a:hover, .footer a:active{
+  color: var(--white);
+}
